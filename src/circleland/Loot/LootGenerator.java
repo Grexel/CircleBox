@@ -10,12 +10,6 @@ import circleland.CircleContainer;
 import circleland.CircleEntity;
 import circleland.CircleEquipment;
 import circleland.CircleItem;
-import circleland.CircleWeapon;
-import circleland.Equipment.CircleAmulet;
-import circleland.Equipment.CircleRing;
-import circleland.Items.Gold;
-import circleland.Weapons.*;
-import java.awt.Color;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Random;
@@ -101,8 +95,8 @@ public class LootGenerator {
                 numAffix = rand.nextInt(2) + 1;
                 ((CircleEquipment) holder).rarity(2);
             }
-            //make sure rings and amulets always have an affix
-            if(holder instanceof CircleRing || holder instanceof CircleAmulet){
+            //make sure Eye Crystals always have an affix
+            if(((CircleEquipment)holder).type().equals("Crystal")){
                 if(numAffix == 0){
                     numAffix = 1;                
                     ((CircleEquipment) holder).rarity(2);

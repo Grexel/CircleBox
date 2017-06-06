@@ -1,6 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <itemList name="ChaoticItems">
     <!-- Weapons -->
+    <weapon type="Boomerang" level="3">
+        <name>Clay Boomerang</name>
+        <rarity>1</rarity>
+        <size>10</size>
+        <moveSpeed>200</moveSpeed>
+        <attackSpeed>500</attackSpeed>
+        <attackLife>500</attackLife>
+        <color>0x808080</color>
+        <minDamage>3</minDamage>
+        <maxDamage>7</maxDamage>
+        <pierce>1</pierce>   
+    </weapon>
+    <weapon type="Bounce" level="3">
+        <name>Clay Ricochet</name>
+        <rarity>1</rarity>
+        <size>10</size>
+        <moveSpeed>200</moveSpeed>
+        <attackSpeed>500</attackSpeed>
+        <attackLife>500</attackLife>
+        <color>0x808080</color>
+        <minDamage>3</minDamage>
+        <maxDamage>7</maxDamage>
+        <pierce>1</pierce>   
+    </weapon>
+    <weapon type="Nova" level="3">
+        <name>Sand Burster</name>
+        <rarity>1</rarity>
+        <size>100</size>
+        <moveSpeed>200</moveSpeed>
+        <attackSpeed>500</attackSpeed>
+        <attackLife>500</attackLife>
+        <color>0x808080</color>
+        <minDamage>3</minDamage>
+        <maxDamage>7</maxDamage>
+        <pierce>1</pierce>   
+    </weapon>
+    <weapon type="Splitter" level="3">
+        <name>Clay Shatter</name>
+        <rarity>1</rarity>
+        <size>10</size>
+        <moveSpeed>200</moveSpeed>
+        <attackSpeed>500</attackSpeed>
+        <attackLife>500</attackLife>
+        <color>0x808080</color>
+        <minDamage>3</minDamage>
+        <maxDamage>7</maxDamage>
+        <pierce>3</pierce>   
+    </weapon>
+    <weapon type="Sword" level="3">
+        <name>Wooden Sword</name>
+        <rarity>1</rarity>
+        <size>100</size>
+        <moveSpeed>200</moveSpeed>
+        <attackSpeed>500</attackSpeed>
+        <attackLife>500</attackLife>
+        <color>0x808080</color>
+        <minDamage>3</minDamage>
+        <maxDamage>7</maxDamage>
+        <pierce>1</pierce>   
+    </weapon>
     <weapon type="Rapier" level="3">
         <name>Sabre</name>
         <rarity>1</rarity>
@@ -362,205 +422,9 @@
         <maxDefense>240</maxDefense>
         <strengthReq>10</strengthReq>
     </armor>
-    <!-- Helmets -->
-    <armor type="helmet" level="1">
-        <name>Shawl</name>
-        <rarity>1</rarity>
-        <color>0x808080</color>
-        <minDefense>1</minDefense>
-        <maxDefense>3</maxDefense>
-        <strengthReq>5</strengthReq>
-    </armor>
-    <armor type="helmet" level="4">
-        <name>Leather Cap</name>
-        <rarity>1</rarity>
-        <color>0x808080</color>
-        <minDefense>5</minDefense>
-        <maxDefense>12</maxDefense>
-        <strengthReq>5</strengthReq>
-    </armor>
-    <armor type="helmet" level="9">
-        <name>Skullcap</name>
-        <rarity>1</rarity>
-        <color>0x808080</color>
-        <minDefense>14</minDefense>
-        <maxDefense>21</maxDefense>
-        <strengthReq>5</strengthReq>
-    </armor>
-    <armor type="helmet" level="13">
-        <name>Helmet</name>
-        <rarity>1</rarity>
-        <color>0x808080</color>
-        <minDefense>25</minDefense>
-        <maxDefense>32</maxDefense>
-        <strengthReq>5</strengthReq>
-    </armor>
-    <armor type="helmet" level="18">
-        <name>Full Helm</name>
-        <rarity>1</rarity>
-        <color>0x808080</color>
-        <minDefense>34</minDefense>
-        <maxDefense>41</maxDefense>
-        <strengthReq>5</strengthReq>
-    </armor>
-    <armor type="helmet" level="18">
-        <name>Mask</name>
-        <rarity>1</rarity>
-        <color>0x808080</color>
-        <minDefense>34</minDefense>
-        <maxDefense>41</maxDefense>
-        <strengthReq>5</strengthReq>
-    </armor>
-    <armor type="helmet" level="22">
-        <name>Great Helm</name>
-        <rarity>1</rarity>
-        <color>0x808080</color>
-        <minDefense>43</minDefense>
-        <maxDefense>52</maxDefense>
-        <strengthReq>5</strengthReq>
-    </armor>
-    <armor type="helmet" level="25">
-        <name>Crown</name>
-        <rarity>1</rarity>
-        <color>0x808080</color>
-        <minDefense>48</minDefense>
-        <maxDefense>59</maxDefense>
-        <strengthReq>5</strengthReq>
-    </armor>
-    <armor type="helmet" level="27">
-        <name>Crystal Crown</name>
-        <rarity>1</rarity>
-        <color>0x808080</color>
-        <minDefense>61</minDefense>
-        <maxDefense>73</maxDefense>
-        <strengthReq>5</strengthReq>
-    </armor>
-    <!-- Boots -->
-    <armor type="boots" level="1">
-        <name>Cloth Boots</name>
-        <rarity>1</rarity>
-        <color>0x808080</color>
-        <minDefense>1</minDefense>
-        <maxDefense>3</maxDefense>
-        <strengthReq>5</strengthReq>
-    </armor>
-    <armor type="boots" level="4">
-        <name>Leather Boots</name>
-        <rarity>1</rarity>
-        <color>0x808080</color>
-        <minDefense>4</minDefense>
-        <maxDefense>9</maxDefense>
-        <strengthReq>5</strengthReq>
-    </armor>
-    <armor type="boots" level="9">
-        <name>Heavy Leather Boots</name>
-        <rarity>1</rarity>
-        <color>0x808080</color>
-        <minDefense>10</minDefense>
-        <maxDefense>14</maxDefense>
-        <strengthReq>5</strengthReq>
-    </armor>
-    <armor type="boots" level="13">
-        <name>Chain Boots</name>
-        <rarity>1</rarity>
-        <color>0x808080</color>
-        <minDefense>16</minDefense>
-        <maxDefense>21</maxDefense>
-        <strengthReq>5</strengthReq>
-    </armor>
-    <armor type="boots" level="18">
-        <name>Plated Boots</name>
-        <rarity>1</rarity>
-        <color>0x808080</color>
-        <minDefense>22</minDefense>
-        <maxDefense>27</maxDefense>
-        <strengthReq>5</strengthReq>
-    </armor>
-    <armor type="boots" level="22">
-        <name>Greaves</name>
-        <rarity>1</rarity>
-        <color>0x808080</color>
-        <minDefense>28</minDefense>
-        <maxDefense>34</maxDefense>
-        <strengthReq>5</strengthReq>
-    </armor>
-    <armor type="boots" level="27">
-        <name>Crystal Greaves</name>
-        <rarity>1</rarity>
-        <color>0x808080</color>
-        <minDefense>35</minDefense>
-        <maxDefense>41</maxDefense>
-        <strengthReq>5</strengthReq>
-    </armor>
-    <!-- Gloves -->    
-    <armor type="gloves" level="1">
-        <name>Cloth Bracers</name>
-        <rarity>1</rarity>
-        <color>0x808080</color>
-        <minDefense>1</minDefense>
-        <maxDefense>3</maxDefense>
-        <strengthReq>5</strengthReq>
-    </armor>
-    <armor type="gloves" level="4">
-        <name>Leather Bracers</name>
-        <rarity>1</rarity>
-        <color>0x808080</color>
-        <minDefense>5</minDefense>
-        <maxDefense>9</maxDefense>
-        <strengthReq>5</strengthReq>
-    </armor>
-    <armor type="gloves" level="9">
-        <name>Heavy Leather Bracers</name>
-        <rarity>1</rarity>
-        <color>0x808080</color>
-        <minDefense>10</minDefense>
-        <maxDefense>16</maxDefense>
-        <strengthReq>5</strengthReq>
-    </armor>
-    <armor type="gloves" level="13">
-        <name>Chain Gloves</name>
-        <rarity>1</rarity>
-        <color>0x808080</color>
-        <minDefense>17</minDefense>
-        <maxDefense>22</maxDefense>
-        <strengthReq>5</strengthReq>
-    </armor>
-    <armor type="gloves" level="18">
-        <name>Light Gauntlets</name>
-        <rarity>1</rarity>
-        <color>0x808080</color>
-        <minDefense>23</minDefense>
-        <maxDefense>28</maxDefense>
-        <strengthReq>5</strengthReq>
-    </armor>
-    <armor type="gloves" level="22">
-        <name>Gauntlets</name>
-        <rarity>1</rarity>
-        <color>0x808080</color>
-        <minDefense>31</minDefense>
-        <maxDefense>37</maxDefense>
-        <strengthReq>5</strengthReq>
-    </armor>
-    <armor type="gloves" level="27">
-        <name>Prism Gauntlets</name>
-        <rarity>1</rarity>
-        <color>0x808080</color>
-        <minDefense>40</minDefense>
-        <maxDefense>47</maxDefense>
-        <strengthReq>5</strengthReq>
-    </armor>
     <!-- Rings --> <!-- Level 0 means always available to generate -->
-    <armor type="ring" level="0">
-        <name>Ring</name>
-        <rarity>1</rarity>
-        <color>0x808080</color>
-        <minDefense>0</minDefense>
-        <maxDefense>0</maxDefense>
-        <strengthReq>0</strengthReq>
-    </armor>
-    <!-- Amulet --> <!-- Level 0 means always available to generate -->
-    <armor type="amulet" level="0">
-        <name>Amulet</name>
+    <armor type="Crystal" level="0">
+        <name>Crystal Eye</name>
         <rarity>1</rarity>
         <color>0x808080</color>
         <minDefense>0</minDefense>

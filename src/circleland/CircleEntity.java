@@ -6,12 +6,9 @@
 package circleland;
 
 import circleland.Display.DamageDisplayObject;
-import circleland.Equipment.*;
 import circleland.Items.Gold;
 import circleland.Items.Portal;
-import circleland.Weapons.*;
 import java.awt.*;
-import java.awt.geom.Ellipse2D;
 import java.awt.geom.Point2D;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -35,13 +32,8 @@ public class CircleEntity extends CircleObject{
     
     //Inventory and skills
     protected CircleWeapon equippedWeapon;
-    protected CircleArmor equippedArmor;
-    protected CircleHelmet equippedHelmet;
-    protected CircleGloves equippedGloves;
-    protected CircleBoots equippedBoots;
-    protected CircleRing equippedRing1;
-    protected CircleRing equippedRing2;
-    protected CircleAmulet equippedAmulet;
+    protected CircleEquipment equippedArmor;
+    protected CircleEquipment equippedCrystal;
     protected CircleSkill equippedSkill;
     
     protected ArrayList<CircleItem> inventory;
@@ -285,30 +277,15 @@ public class CircleEntity extends CircleObject{
         if(equippedWeapon != null)equippedWeapon.addBonus(this);
         if(equippedSkill != null)equippedSkill.addBonus(this);
         if(equippedArmor != null)equippedArmor.addBonus(this);
-        if(equippedHelmet != null)equippedHelmet.addBonus(this);
-        if(equippedGloves != null)equippedGloves.addBonus(this);
-        if(equippedBoots != null)equippedBoots.addBonus(this);
-        if(equippedRing1 != null)equippedRing1.addBonus(this);
-        if(equippedRing2 != null)equippedRing2.addBonus(this);
-        if(equippedAmulet != null)equippedAmulet.addBonus(this);
+        if(equippedCrystal != null)equippedCrystal.addBonus(this);
         
         //add item affixes;
         if(equippedWeapon != null)
         for(CircleAffix affix : equippedWeapon.affixes()){affix.addBonus(this);}
         if(equippedArmor != null)
         for(CircleAffix affix : equippedArmor.affixes()){affix.addBonus(this);}
-        if(equippedHelmet != null)
-        for(CircleAffix affix : equippedHelmet.affixes()){affix.addBonus(this);}
-        if(equippedGloves != null)
-        for(CircleAffix affix : equippedGloves.affixes()){affix.addBonus(this);}
-        if(equippedBoots != null)
-        for(CircleAffix affix : equippedBoots.affixes()){affix.addBonus(this);}
-        if(equippedRing1 != null)
-        for(CircleAffix affix : equippedRing1.affixes()){affix.addBonus(this);}
-        if(equippedRing2 != null)
-        for(CircleAffix affix : equippedRing2.affixes()){affix.addBonus(this);}
-        if(equippedAmulet != null)
-        for(CircleAffix affix : equippedAmulet.affixes()){affix.addBonus(this);}
+        if(equippedCrystal != null)
+        for(CircleAffix affix : equippedCrystal.affixes()){affix.addBonus(this);}
         
         //add effects stats, remove if expired;
         for (Iterator<CircleEffect> iterator = effects.iterator(); iterator.hasNext();) {
@@ -576,20 +553,10 @@ public class CircleEntity extends CircleObject{
     //EQUIPMENT
     public void equippedWeapon(CircleWeapon m){equippedWeapon = m;}
     public CircleWeapon equippedWeapon(){ return equippedWeapon;}
-    public void equippedArmor(CircleArmor m){equippedArmor = m;}
-    public CircleArmor equippedArmor(){ return equippedArmor;}
-    public void equippedHelmet(CircleHelmet m){equippedHelmet = m;}
-    public CircleHelmet equippedHelmet(){ return equippedHelmet;}
-    public void equippedGloves(CircleGloves m){equippedGloves = m;}
-    public CircleGloves equippedGloves(){ return equippedGloves;}
-    public void equippedBoots(CircleBoots m){equippedBoots = m;}
-    public CircleBoots equippedBoots(){ return equippedBoots;}
-    public void equippedRing1(CircleRing m){equippedRing1 = m;}
-    public CircleRing equippedRing1(){ return equippedRing1;}
-    public void equippedRing2(CircleRing m){equippedRing2 = m;}
-    public CircleRing equippedRing2(){ return equippedRing2;}
-    public void equippedAmulet(CircleAmulet m){equippedAmulet = m;}
-    public CircleAmulet equippedAmulet(){ return equippedAmulet;}
+    public void equippedArmor(CircleEquipment m){equippedArmor = m;}
+    public CircleEquipment equippedArmor(){ return equippedArmor;}
+    public void equippedCrystal(CircleEquipment m){equippedCrystal = m;}
+    public CircleEquipment equippedCrystal(){ return equippedCrystal;}
     
     public void equippedSkill(CircleSkill m){equippedSkill = m;}
     public CircleSkill equippedSkill(){ return equippedSkill;}

@@ -14,7 +14,11 @@ import java.util.List;
  *
  * @author Jeff
  */
-public abstract class CircleEquipment extends CircleItem{
+public class CircleEquipment extends CircleItem{
+    protected String type;
+    public void type(String i){type = i;}
+    public String type(){return type;}
+    
     protected List<CircleAffix> affixes;
     public void affixes(List<CircleAffix> aff){affixes = aff;}
     public List<CircleAffix> affixes(){return affixes;}
@@ -30,6 +34,7 @@ public abstract class CircleEquipment extends CircleItem{
     public CircleEquipment()
     {
         super();
+        type = "None";
         affixes = new ArrayList<>();
         itemLevel = 1;
         defense = 0;

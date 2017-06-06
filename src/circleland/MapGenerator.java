@@ -55,12 +55,12 @@ public class MapGenerator {
             cM.monsters().addAll(monsterGenerator.spawnGroupTurret(cM.level(), 10, cM.mapBounds()));
         }
         if(cM.name().equalsIgnoreCase("ImpLand")){
-            cM.monsters().addAll(monsterGenerator.spawnGroupRedImp(cM.level(), 50, cM.mapBounds()));
-            cM.monsters().addAll(monsterGenerator.spawnGroupRedImpSpawner(cM.level(), 4, cM.mapBounds()));
+            cM.monsters().addAll(monsterGenerator.spawnGroupRedImp(cM.level(), 1000, cM.mapBounds()));
+            cM.monsters().addAll(monsterGenerator.spawnGroupRedImpSpawner(cM.level(), 40, cM.mapBounds()));
         }
         if(cM.name().equalsIgnoreCase("ImpLands")){
-            cM.monsters().addAll(monsterGenerator.spawnGroupRedImp(cM.level(), 50, cM.mapBounds()));
-            cM.monsters().addAll(monsterGenerator.spawnGroupRedImpSpawner(cM.level(), 4, cM.mapBounds()));
+            cM.monsters().addAll(monsterGenerator.spawnGroupRedImp(cM.level(), 1000, cM.mapBounds()));
+            cM.monsters().addAll(monsterGenerator.spawnGroupRedImpSpawner(cM.level(), 40, cM.mapBounds()));
         }
         if(cM.name().equalsIgnoreCase("ImpDen")){
             cM.monsters().addAll(monsterGenerator.spawnGroupRedImp(cM.level(), 50, cM.mapBounds()));

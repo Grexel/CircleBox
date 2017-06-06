@@ -52,6 +52,20 @@ public class DiagramLoader {
             <pierce>1</pierce>   
         </weapon>
 */
+            /* NEW WAY 6/2/2017
+<itemList name="ChaoticItems">
+    <!-- Weapons -->
+        <!-- Rapiers -->
+        <weapon type="Rapier" level="1" name="King Jim's Sabre"
+            size="100" moveSpeed="200" attackSpeed="500"
+            attackLife="500" color="0x808080" minDamage="3"
+            maxDamage="7" pierce="1" rarity="unique">
+            
+            <affix type="Slow" name="Frosty" value="15%">
+            <affix type="DamageIncrease" name="Strong" value="12%">
+            <affix type="ProjectileSpeed" name="Fast" value="25">
+        </weapon>
+*/
             //iterate over all top nodes
             for (int i = 0; i < nodeList.getLength(); i++) {
                 Node node = nodeList.item(i);

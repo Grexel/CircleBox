@@ -1,5 +1,52 @@
+TODO 6/2/2017
+
+<!-- CHARACTER --->
+3 types of Wearables. Body Armor, Eye Crystal, and Weapon
+Each can have affixes
+Each are drawn on top of the Body, Draw -> Body, Armor, Eye, Eye Crystal, Weapon
+Wearables gain experience by consuming other wearables of the same type.
+They have a rarity and a quality type. 
+Rarity gives more affixes to modify stats
+Normal, Magic, Rare, Unique
+Quality tightens the level-up item attribute increase toward the high end
+Poor, Standard, Superior, Perfect
+
+Weapon Types:
+<!-- RANGED --->
+ 
+Bullet        Bomb          Boomerang       Bounce
+Flamethrower  Splitter      Homing          Multi
+Wall          
+
+<!-- MELEE --->
+Nova    Bite    Rapier  Sword
+
+
+2 slots for consumables.
+Consumables are Flasks that have magic attributes like wearables.
+2 Types, Health and Mana.
+Affixes add other effects like Speed, Defense, Damage, Resistance, 
+
+Status Effects
+Stunned     Poisoned    Confused
+Slow(mv)    Silenced    Feared
+Weak        Chained     Amplify Damage
+Blind       Slow(atk)   Taunted
+
+Haste(mv)   Damage+
+Haste(atk)  CritUp
+Armored     
+Fast(cast)
+Regen
+Max Health
+
+
+--! Pre 6/2017 ---
+
 CircleLoader add save/load items for character
 Take item, create diagram, use diagram to code xml for item.
+
 add rarity/affixes to weapons/armor diagrams
+
 Remove AttackDamage and MagicDamage, 
 replace with min-max AttackDamage and min-max MagicDamage

@@ -5,22 +5,10 @@
  */
 package MainScreens;
 
-import circleland.CircleClass;
-import circleland.CircleLand;
-import circleland.CircleMap;
-import circleland.CircleMouse;
-import circleland.CircleSummoned;
-import circleland.Classes.WarriorCircle;
-import circleland.Display.Camera;
 import circleland.DrawingPanel;
-import static circleland.DrawingPanel.PANEL_HEIGHT;
-import static circleland.DrawingPanel.PANEL_WIDTH;
 import circleland.LookupAtan2;
-import circleland.MapLoader;
-import circleland.MapManager;
 import circleland.SoundManager;
 import java.awt.Color;
-import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
@@ -30,7 +18,6 @@ import java.awt.event.MouseMotionListener;
 import java.awt.event.MouseWheelEvent;
 import java.awt.event.MouseWheelListener;
 import java.awt.event.WindowEvent;
-import java.awt.geom.Point2D;
 import javax.swing.*;
 
 /**

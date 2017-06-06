@@ -6,6 +6,7 @@
 package circleland.Display;
 
 import circleland.CircleEntity;
+import circleland.CircleItem;
 import circleland.CircleMap;
 import circleland.CircleMouse;
 import circleland.CircleSkill;
@@ -119,7 +120,7 @@ public class Camera extends RectangleObject{
             }
             else if(mouse.holding() != null)
             {
-                if(mouse.holding() instanceof CircleWeapon){
+                if(mouse.holding() instanceof CircleItem){
                     double xPos= focus.position().x + Math.random()*3-3;
                     double yPos= focus.position().y + Math.random()*3-3;
                     mouse.holding().setPosition(xPos ,yPos);

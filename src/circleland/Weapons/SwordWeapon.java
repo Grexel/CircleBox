@@ -5,7 +5,6 @@
  */
 package circleland.Weapons;
 
-import circleland.Attacks.RapierAttack;
 import circleland.Attacks.SwordAttack;
 import circleland.CircleAttack;
 import circleland.CircleEntity;
@@ -32,6 +31,7 @@ public class SwordWeapon extends CircleWeapon{
         bulletSize = 100;
         attackSound = "sounds/Shoot4.wav";
     }
+    
     public void attack(CircleEntity owner, ArrayList<CircleAttack> attacks)
     {
         super.attack(owner,attacks);
@@ -43,10 +43,12 @@ public class SwordWeapon extends CircleWeapon{
         
         attacks.add(bA);
     }
+    
     public void draw(Graphics2D graphics)
     {
         draw(graphics,(int)position.x,(int)position.y);
     }
+    
     public void draw(Graphics2D graphics, int x, int y)
     {
         graphics.setColor(rarityColor);

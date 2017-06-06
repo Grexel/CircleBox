@@ -74,7 +74,7 @@ public class WeaponDiagram extends ItemDiagram{
              weapon = new BoomerangWeapon();
         }
         else {
-             weapon = new BulletWeapon();
+             weapon = new BoomerangWeapon();
         }
             weapon.itemLevel(getItemLevel());
             weapon.name(getName());
@@ -86,6 +86,7 @@ public class WeaponDiagram extends ItemDiagram{
             weapon.minDamage(minDamage);
             weapon.maxDamage(maxDamage);
             weapon.piercing(pierce);
+            weapon.affixes().addAll(affixes);
             return weapon;
     }
     @Override

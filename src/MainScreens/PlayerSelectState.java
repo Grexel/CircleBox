@@ -20,6 +20,7 @@ public class PlayerSelectState extends GameState{
     List<CircleClass> availablePlayers;
     CircleClass selectedPlayer;
     int selectedPlayerNumber;
+    
     public PlayerSelectState(GameStateManager gsm){
         super(gsm);
         availablePlayers = CircleLoader.listCharacters();
@@ -83,5 +84,4 @@ public class PlayerSelectState extends GameState{
     public void close() {
        
     }
-    
 }
